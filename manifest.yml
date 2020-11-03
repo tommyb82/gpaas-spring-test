@@ -1,0 +1,6 @@
+---
+applications:
+- name: tom-test
+  memory: 64M
+  buildpacks:
+  - staticfile_buildpack
