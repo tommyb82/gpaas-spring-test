@@ -1,6 +1,7 @@
 ---
 applications:
-- name: tom-test
-  memory: 64M
-  buildpacks:
-  - staticfile_buildpack
+- name: gpaas-spring-test
+  memory: 128M
+  buildpacks: 
+    - java_buildpack
+  path: target/gpaas-spring-test-0.0.1-SNAPSHOT.jar
