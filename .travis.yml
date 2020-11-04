@@ -1,0 +1,9 @@
+deploy:
+  edge: true
+  provider: cloudfoundry
+  username: tom.bunting@crowncommercial.gov.uk
+  api: https://api.london.cloud.service.gov.uk
+  organization: ccs-scale-cat
+  space: sandbox
+  password:
+    secure: FvAAmp41r1311lxZ921VnnIDJSAFBDwOL7g2CINYpi3Q9KWQQTO+9gzs2E6mi7Jf5XWNyowtrvjdyvSTT/LLZ8uxHuGbqAPWNwIKYdeAxJ+5IkdmTOsuAtCaYO+g2T2blY86VXGN6jsQBOOn8q1AVVn4jDHEgISKSpRs9iDWh5rBHbU9oVPDGXgYbyJl+5wZi55V+yctJI2tt3r5rZ0srxmApmBCtQx6lnrXZxxHE+E9usKHXgKLzGadbfCs+6eRvXXszIyd6VaksEuuYeJeM/9qEruBdPBhqy9sXTlZmAuDDZltz6jiIm2r+zKtT+YL/zChUB69+NoxBhmgjmSkfqNmylxRRPa7yWdJGwsukp6w+3slhEK5anyySKiaX0Ny6QvZTTC46d9nA8SZARTGfc+nAC++dUx4StHB3Qu8oSF9jOa5CB8ewWLZ0sJ1W7CUwCIQYiTgiCGgBzB8I1X+5+Up9AYwVpcbmfKaJ5Syg7VPJg0fY6aHtv/3/z/f9JNAVsPbiSrWnlWyNDdjLATYjzRAmqJSkfLN5Lv/znrt8TYfy6GMpdJTZ4ru6FdxCIAOW3zk4D78wApYVwZMVLOZu9pC66R92Wlf+syIi/ickbt2yG+OaHmMsUTIyIIZHoKh4iXUJYz2cBhqgUIkssqhPLqOjNAotDMvzYhWv8HO1c0=
