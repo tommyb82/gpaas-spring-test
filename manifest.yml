@@ -1,7 +1,7 @@
 ---
 applications:
 - name: gpaas-spring-test
-  memory: 128M
+  memory: 256M
   buildpacks: 
     - java_buildpack
   path: target/gpaas-spring-test-0.0.1-SNAPSHOT.jar
