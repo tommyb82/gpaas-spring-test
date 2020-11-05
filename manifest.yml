@@ -1,7 +1,7 @@
 ---
 applications:
 - name: gpaas-spring-test
-  memory: 256M
+  memory: 1024M
   buildpacks: 
-    - https://github.com/cloudfoundry/java-buildpack#v3.19.1
+    - https://github.com/cloudfoundry/java-buildpack#v4.33
   path: target/gpaas-spring-test-0.0.1-SNAPSHOT.jar
