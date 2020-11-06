@@ -1,0 +1,19 @@
+spring:
+  jackson:
+    default-property-inclusion: non-null
+    property-naming-strategy: LOWER_CAMEL_CASE 
+    deserialization:
+      fail-on-missing-external-type-id-property: false
+  jpa:
+    database: postgresql
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+      
+---
+spring:
+  profiles: local
+  jpa:
+    database: h2
+    hibernate:
+      ddl-auto: create-drop
