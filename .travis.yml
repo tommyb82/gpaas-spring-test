@@ -2,18 +2,19 @@ language: java
 script: mvn package
 cache:
   directories:
-  - $HOME/.m2
+  - "$HOME/.m2"
 branches:
   only:
   - develop
 deploy:
   edge: true
   provider: cloudfoundry
-  username: tom.bunting@crowncommercial.gov.uk
   api: https://api.london.cloud.service.gov.uk
   organization: ccs-scale-cat
   space: sandbox
   on:
-    branch: develop  
-  password:
-    secure: FvAAmp41r1311lxZ921VnnIDJSAFBDwOL7g2CINYpi3Q9KWQQTO+9gzs2E6mi7Jf5XWNyowtrvjdyvSTT/LLZ8uxHuGbqAPWNwIKYdeAxJ+5IkdmTOsuAtCaYO+g2T2blY86VXGN6jsQBOOn8q1AVVn4jDHEgISKSpRs9iDWh5rBHbU9oVPDGXgYbyJl+5wZi55V+yctJI2tt3r5rZ0srxmApmBCtQx6lnrXZxxHE+E9usKHXgKLzGadbfCs+6eRvXXszIyd6VaksEuuYeJeM/9qEruBdPBhqy9sXTlZmAuDDZltz6jiIm2r+zKtT+YL/zChUB69+NoxBhmgjmSkfqNmylxRRPa7yWdJGwsukp6w+3slhEK5anyySKiaX0Ny6QvZTTC46d9nA8SZARTGfc+nAC++dUx4StHB3Qu8oSF9jOa5CB8ewWLZ0sJ1W7CUwCIQYiTgiCGgBzB8I1X+5+Up9AYwVpcbmfKaJ5Syg7VPJg0fY6aHtv/3/z/f9JNAVsPbiSrWnlWyNDdjLATYjzRAmqJSkfLN5Lv/znrt8TYfy6GMpdJTZ4ru6FdxCIAOW3zk4D78wApYVwZMVLOZu9pC66R92Wlf+syIi/ickbt2yG+OaHmMsUTIyIIZHoKh4iXUJYz2cBhqgUIkssqhPLqOjNAotDMvzYhWv8HO1c0=
+    branch: develop
+env:
+  global:
+  - secure: jqb47h6TaCwF/dPnMUk/wgjd3e/1ZS3muGn9lZd+gct8kh6p3McwzAH03Zf8yE3qR5bhS0At6GcYR/qy4sNmAwVkUfzkihwMDZWv4dtXJASnuVac1ObnD9aircQzYl+IL6lR7Go8gQPE8XM0xE9mZK2SJaUy5bcYZmrpirlgKHhjVZhSgnhHIvAQ3ZG+nVes6fu7nW5tylqxgAlHdQycRgW4L0p8czuK+oLuU4OAXFEKrGSWatJcjuFbV1tvKijpck+kgF7COA0QJLf11/aKZL06tJYnYKKhrBTDUFk6dyTinihNUlq/D3YcVKpIvGZE1tnduyZ7uJlrv2fx7bt1bgT3rhnOZ/3Kk4Phg6+wYJfolahKqdb18fZx+yKUi3nsqhVh1aO4LDTt/MfHoniu3KlCYkj080qnAy5oRp4+ai4y1/QK5ycfqSVWEsWxFYTJC2rhth/BCCm3LJ4AtzsWgJUowAozOKRQ3f+A0g6DugyhRTiql2NGHps/gUZucwBi+NQQTtOUk1fg6/R6rch7IrDoCq6tyA0/PO7LUxFc5761QiULddf9aL/m1FoBAL70Girr8lLEeP+PjRCBG2OODz479ToIvxf3sZamTdgWb0EMp00N0mQTBju9VeCfTHPG4+TeWZK98hdCwQh8q18U/MzFkFqWag4WFJE0HjhIR+Q=
+  - secure: qYW3U9Zd9j8OBFH+7+NExnHcnB2WrIug/kWxKoBMk5NwcF9NqsP2ccPFsu/LGwL0QJ1f1JA4c1rpixDRN6Ro3UTTSf9vHqqHMNLSI0dppyrJTOCZYwj28PXc56IlucvR9P/MhykAkoUZgF1klqNcah1TM+FFLhu4lRCvDIKxG1PBaf4lg+yMn37v1yRP0BeRcK3LtF4b6dwJ4KVnAfmKSEOziue0JcHZSmDfoivN+Q2HT1jl3iVO0sBdvGPAnw99yiSwETNf5H6WfTFmf7vJvngyvvrlXcdVAe900fyfOSir4ybYcIOqeDBF1+DaDxlGlEoyez39vuUQTxNxuLN+jPBxlLuAtFWtudKL/tjRkp+zAlfhoDZCYMBxIr9Gh/RZyTPR1t5CIKB/JdjW9jJ2sp2bmlQtS+iJdQW+cAsAx7z1hhvSHDoJEAtrvX6+yz52c7ebgIebzWX0lT4D30a2lA5hug91TdzkwQwjzMdtv7jlf4P33iuR/W8BlwYNDejgXyMsdMp//+YbjVDN5zMFu6gpdbh9SCK+Fl6b8velseNQIvNye5a6mD3qNZ/9Iy8a6UTKuhiPRtfDE6RjVXeooE5ygL7m/IP58tQbH4+EvXYBRpaOd/EFlhQWZ36FUrq0ma1eX6oxsXMbM/lrdlOgC9C5CemgKmBIGotmeb6Na0U=
